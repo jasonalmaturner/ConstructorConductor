@@ -16,3 +16,11 @@ String.prototype.reverse = function(){
 
 var test = 'Cruncha muncha cruncha muncha fritos in my butt';
 test.reverse();
+
+var name = 'Jason';
+
+name.reverse();
+'nosaJ'
+
+'Turner'.reverse();
+'renruT'

@@ -5,10 +5,13 @@
     2) Lenny, lenny@theLenster.com, 'iLoveLentilSoup'
 */
 
-var User = function(name, email, pw){
+var User = function(name, email, pw, array){
   this.name = name;
   this.email = email;
   this.pw = pw;
+  if(array){
+    array.push(this);
+  }
 }
 
 
@@ -20,6 +23,10 @@ var users = [];
 //Now create and push into your users array 3 seperate instances of User using the data from above in that exact order
 
   //code here
+
+// new User('Tyler', 'tylermcginnis33@gmail.com', 'iLoveJS', users);
+// users.push(user1);
+
 users.push(new User('Tyler', 'tylermcginnis33@gmail.com', 'iLoveJS'));
 users.push(new User('Cahlan', 'cahlan@devmounta.in', 'iLoveHashtags'));
 users.push(new User('Lenny', 'lenny@theLenster.com', 'iLoveLentilSoup'));

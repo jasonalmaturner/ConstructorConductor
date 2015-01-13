@@ -22,3 +22,20 @@ Person.prototype.sayName = function(){
 }
 
 jason.sayName();
+
+var Car = function(color, make, model) {
+	this.color = color;
+	this.make = make;
+	this.model = model;
+}
+
+Car.prototype.drive = function() {
+	alert('Driving');
+};
+
+Car.prototype.stop = function() {
+	alert('Stopping');
+}
+
+var car1 = new Car('Red', 'Ford', 'Fiesta');
+var car2 = new Car('Blue', 'Ford', 'Fiesta');
